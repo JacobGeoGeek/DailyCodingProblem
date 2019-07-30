@@ -1,4 +1,4 @@
-def countSort(arrayInt):
+def FindUniqueNumbersInList(arrayInt):
     minValue = min(arrayInt)
     maxValue = max(arrayInt)
     frequencyNumbers = [0]*((maxValue-minValue)+1)
@@ -14,4 +14,4 @@ def countSort(arrayInt):
     return output
 
 
-print(countSort([2, 4, 6, 8, 10, 2, 6, 10]))
+print(FindUniqueNumbersInList([2, 4, 6, 8, 10, 2, 6, 10]))
