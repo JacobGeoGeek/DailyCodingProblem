@@ -13,5 +13,6 @@ def productArray(Numbers):
 NumbersFromProblemv1 = [1, 2, 3, 4, 5]
 NumbersFromProblemv2 = [3, 2, 1]
 
+
 print(productArray(NumbersFromProblemv1))
 print(productArray(NumbersFromProblemv2))
