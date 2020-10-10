@@ -23,9 +23,3 @@ def deserializeList(listValues):
     node = Node(value, deserializeList(listValues),
                 deserializeList(listValues))
     return node
-
-
-if __name__ == "__main__":
-    node = Node('root', Node('left', Node('left.left')), Node('right'))
-
-    print(deserialize(serialize(node)).left.left.val == "left.left")
