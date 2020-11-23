@@ -1,8 +1,18 @@
 def sumOfTwoNumber(listNumber, sumResult):
-    for x in range(0, len(listNumber)):
-        for y in range(1, len(listNumber)):
-            if listNumber[x]+listNumber[y] == sumResult:
-                return (listNumber[x], listNumber[y])
+    listNumber = sorted(listNumber)
+    rightIndex = 0
+    leftIndex = len(listNumber) - 1
+
+    while(rightIndex < leftIndex):
+        if sumResult == listNumber[rightIndex] + listNumber[leftIndex]:
+            return (listNumber[rightIndex], listNumber[leftIndex])
+
+        if (sumResult > listNumber[rightIndex] + listNumber[leftIndex]):
+            rightIndex += 1
+
+        if (sumResult < listNumber[rightIndex] + listNumber[leftIndex]):
+            leftIndex -= 1
+
     return None
 
 
