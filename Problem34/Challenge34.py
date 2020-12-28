@@ -1,4 +1,7 @@
 def find_palindrome(word: str, numberOfletters: int = 1) -> str:
+    if word == word[::-1]:
+        return word
+
     position: int = numberOfletters * -1
     sub_word: str = word[position:]
 
